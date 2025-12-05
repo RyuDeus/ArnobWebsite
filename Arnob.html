@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamjid Anowar | Graphic Designer</title>
+    <link rel="icon" type="image/x-icon" href="imageassets/weblogo.png">
+    
+    <!-- Google Fonts for styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Lato:wght@300;400;700&family=Montserrat:wght@400;800&family=Rock+Salt&family=Allura&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS LINK -->
+     <Link rel="stylesheet" href="01style.css">
+</head>
+<body>
+
+    <!-- Navigation Dots -->
+    <div class="nav-dots">
+        <div class="nav-dot active" onclick="scrollToSection('home')"></div>
+        <div class="nav-dot" onclick="scrollToSection('about')"></div>
+        <div class="nav-dot" onclick="scrollToSection('services')"></div>
+        <div class="nav-dot" onclick="scrollToSection('contact')"></div>
+    </div>
+
+    <!-- SECTION 1: HOME -->
+    <section id="home" class="bg-argyle">
+        <div class="home-header">
+            <h1 class="header-title">Graphic Designer</h1>
+        </div>
+        
+        <div class="home-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="imageassets/Name_image.png" alt="Tamjid Anowar" class="hero-name-img">
+                </div>
+            </div>
+        </div>
+
+            <div class="scroll-btn" onclick="scrollToSection('about')">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        
+    </section>
+
+    <!-- SECTION 2: ABOUT -->
+    <section id="about" class="bg-argyle">
+        <div class="about-container">
+            <div class="about-left">
+
+                <img src="imageassets/Design Graffiti.png" alt="Design graffiti-art" class="graffiti-art" onerror="this.style.display='none'">
+                
+            </div>
+            
+            <div class="about-right">
+                <div class="about-photo-frame">
+                     <!-- REPLACE 'your-photo.jpg' with the mountain/portrait photo from your design -->
+                    <img src="imageassets/about page mountains design.jpg" alt="About Landscape">
+                </div>
+                <div class="about-text">
+                    <h2 class="about-title">Hi I'm Tamjid</h2>
+                    <p class="about-desc">
+                        I'm your one-stop shop for visuals that actually get noticed. From thumbnails that practically grab viewers by the eyeballs to logos that scream "professional" (in a good way!), I craft designs that make people stop, look, and actually give a damn. Let's make your brand impossible to ignore.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+                 <div class="scroll-btn2" onclick="scrollToSection('services')">
+                 <i class="fas fa-chevron-down"></i>
+                 </div>
+
+
+
+    </section>
+
+    <!-- SECTION 3: SERVICES -->
+    <section id="services">
+        <div class="services-header">
+            <div class="svc-main-text">SERVICES</div>
+            <div class="svc-sub-text">Offered</div>
+        </div>
+
+        <div class="services-grid">
+            <!-- Card 1 -->
+            <div class="service-card card-1" onclick="openModal('Logo Designing')">
+                <div class="service-num">01</div>
+                <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+                <div class="service-title">Logo Designing</div>
+                <div class="service-desc">
+                    I will design a unique and professional logo that will help your business stand out from the competition.
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="service-card card-2" onclick="openModal('Thumbnail Editing')">
+                <div class="service-num">02</div>
+                <div class="service-icon"><i class="fas fa-image"></i></div>
+                <div class="service-title">Thumbnail Editing</div>
+                <div class="service-desc">
+                    I will create eye-catching and professional thumbnails that will increase your click-through rate and get you more views.
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="service-card card-3" onclick="openModal('Posts & Banners')">
+                <div class="service-num">03</div>
+                <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                <div class="service-title">Posters & Banners</div>
+                <div class="service-desc">
+                    I will design engaging and on-brand social media posts and banners that will help you grow your audience and engagement.
+                </div>
+            </div>
+          
+        </div>
+
+
+
+
+    </section>
+
+    <!-- SECTION 4: CONTACT -->
+    <section id="contact" class="bg-argyle">
+        <div class="contact_quote">
+        <!-- <div class="home-header">
+            <h1 class="header-title" style="text-align: center; font-size: 4rem; text-transform: capitalize; text-decoration: underline;" >Reach new peaks of design</h1>
+        </div> -->
+        </div>
+        <div class="contact-content">
+            <div class="contact-visual">
+                <!-- Replace with your specific central logo/image for the end page MAYBE LATER-->
+                <div class="img"><img src="imageassets/Name_image.png" alt="tamjid"></div>
+            </div>
+            
+            <h2 style="font-family: 'Oswald'; margin-bottom: 15px; font-size: 2rem;">LET'S WORK TOGETHER</h2>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/tard_user/" class="social-btn" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#home" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#home" class="social-btn"><i class="fab fa-twitter"></i></a>
+                <a href="#home" class="social-btn"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+            <div class="scroll-btn4" onclick="scrollToSection('home')">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+    </section>
+
+    <!-- MODAL POPUP FOR PORTFOLIO -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 class="modal-title" id="modalTitle">Project Title</h2>
+            
+            <div class="gallery-grid" id="modalGallery">
+                <!-- Javascript will inject images here -->
+                <div class="gallery-item"><img src="https://via.placeholder.com/400x300?text=Work+Sample+1" alt="Work"></div>
+                <div class="gallery-item"><img src="https://via.placeholder.com/400x300?text=Work+Sample+2" alt="Work"></div>
+                <div class="gallery-item"><img src="https://via.placeholder.com/400x300?text=Work+Sample+3" alt="Work"></div>
+                <div class="gallery-item"><img src="https://via.placeholder.com/400x300?text=Work+Sample+4" alt="Work"></div>
+            </div>
+        </div>
+    </div>    
+
+
+<!-- ========================================= -->
+<!-- FULL SCREEN IMAGE VIEWER (LIGHTBOX)  -->
+<!-- ========================================= -->
+<div id="imageViewer" class="image-viewer hidden">
+    <!-- Close Button -->
+    <span class="close-viewer" onclick="closeImageViewer()">&times;</span>
+    
+    <!-- Zoom Controls -->
+    <div class="viewer-controls">
+        <button class="zoom-btn" onclick="zoomImage(0.2)"><i class="fas fa-plus"></i></button>
+        <button class="zoom-btn" onclick="zoomImage(-0.2)"><i class="fas fa-minus"></i></button>
+    </div>
+
+    <!-- The Image Container -->
+    <img id="fullImage" src="" alt="Full Resolution Preview">
+</div>
+
+    <!-- Javascripts -->
+     <script src="01script.js"></script>
+</body>
+</html>

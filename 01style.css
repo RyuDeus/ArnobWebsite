@@ -1,0 +1,621 @@
+        /* --- RESET & BASICS --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #111;
+            color: #fff;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        /*---CUTOM Fonts-----*/
+        @font-face {
+            font-family:'ITC Caslon';
+            src: url(Fonts/ITC\ Caslon\ 224\ Std\ Book.ttf);
+        }
+
+        @font-face {
+            font-family: 'ITC Franklin Gothic';
+            src: url(Fonts/ITC\ Franklin\ Gothic\ Demi\ Compressed.otf);
+        }    
+        
+
+
+        /* --- UTILITIES --- */
+        .hidden { display: none !important; }
+        
+        /* Custom Argyle Pattern Background (CSS recreation) */
+        .bg-argyle {
+            background-color: #000000af;
+
+        }
+
+        /* --- NAVIGATION (Simple Floating Nav) --- */
+        .nav-dots {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .nav-dot.active {
+            background: #ff0080;
+            transform: scale(1.3);
+        }
+
+        /* --- SECTION 1: HOME --- */
+        #home {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            background-image: url(backgrounds/firstpagebg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center center;
+            width:100vw;
+            height: 1070px;
+
+            
+        }
+
+        
+        .home-header {
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            margin-left: auto;
+            margin-right: auto;
+         
+        }
+        
+        .header-title {
+            font-family: 'ITC Caslon';
+            font-weight: 600;
+            font-size: 120px;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            animation: fadeInDown 1.5s ease-out;
+            max-width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            position: center center;
+        }
+
+
+        .hero-name-img{
+            animation: zoomIn 1.2s ease-out;
+            z-index: 2;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width:100%;
+            height: auto;
+
+        }    
+        
+        /* ----SCROLL BUTTON----- */
+        .scroll-btn {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            color: rgba(252, 7, 121, 0.644);
+            font-size: 5rem;
+            animation: bounce 2s infinite;
+            cursor: pointer; 
+        }
+        .scroll-btn2 {
+            position: absolute;
+            top: 75%;
+            left: 70%;
+            transform: translateX(-50%);
+            z-index: 10;
+            color: rgba(255, 255, 255, 0.705);
+            font-size: 5rem;
+            animation: bounce 2s infinite;
+            cursor: pointer; 
+        }
+
+       .scroll-btn4 {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: rotate(180);
+            z-index: 10;
+            color: rgba(255, 255, 255, 0.644);
+            font-size: 3rem;
+            animation: bounce 2s infinite;
+            cursor: pointer; 
+        }
+
+
+        /* --- SECTION 2: ABOUT --- */
+        #about {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 150px 50px 180px 50px;
+            position: relative;
+            background-attachment: fixed;
+            background-image: url(backgrounds/finalbg1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .about-container {
+            display: flex;
+            width: 100%;
+            max-width: 1400px;
+            height: 80vh;
+            border: 2px solid white;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .about-left {
+            flex: 1;
+            border-right: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .graffiti-art {
+            width: 90%;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 1s ease;
+        }
+
+/* graffiti hover colourwheel effect */
+
+.graffiti-art {
+  transition: filter 0.2s ease; /* Smooth transition */
+
+}
+.graffiti-art:hover {
+  filter: sepia(1000%) saturate(20000%) hue-rotate(260deg);
+}
+  
+/* graffiti hover colourwheel effect */
+
+
+        .about-right {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about-photo-frame {
+            width: 100%;
+            height: 350px;
+            border: 2px solid white;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .about-photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+
+        .about-text {
+            text-align: center;
+            font-family: 'ITC Franklin Gothic';
+
+        }
+
+        .about-title {
+            font-size: 4rem;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .about-title::before, .about-title::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 60px;
+            height: 1px;
+            background: white;
+        }
+        .about-title::before { left: -80px; }
+        .about-title::after { right: -80px; }
+
+        .about-desc {
+            font-size: 1.8rem;
+            line-height: 1.2;
+            color: #ddd;
+            max-width: 90%;
+            margin: 0 auto;
+            font-weight: 300;
+            font-family:'ITC Franklin Gothic';
+            font-weight: 300;
+        }
+
+        /* --- SECTION 3: SERVICES --- */
+        #services {
+            min-height: 100vh;
+            background: #111;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-attachment: fixed;
+            background-image: url(backgrounds/finalbg1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;    
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .svc-main-text {
+            font-family: 'Oswald', sans-serif;
+            font-size: 6rem;
+            color: white;
+            text-transform: uppercase;
+            line-height: 0.8;
+            letter-spacing: -2px;
+        }
+        
+        .svc-sub-text {
+            font-family: 'Allura', cursive;
+            font-size: 5rem;
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-20%) rotate(-10deg);
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            flex: 1;
+        }
+
+        .service-card {
+            position: relative;
+            padding: 40px 20px;
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+            overflow: hidden;
+        }
+
+        /* Specific Colors */
+        .card-1 { background-image: url(imageassets/service1card.jpg); } /* Blue/Teal */
+        .card-2 { background-image: url(imageassets/service2card.jpg); } /* Green */
+        .card-3 { background-image: url(imageassets/service3card.jpg); } /* Purple */ 
+        /* Argyle pattern overlay for cards */
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: 
+                linear-gradient(135deg, rgba(0,0,0,0.1) 25%, transparent 25%) -25px 0,
+                linear-gradient(225deg, rgba(0,0,0,0.1) 25%, transparent 25%) -25px 0;
+            background-size: 50px 50px;
+            pointer-events: none;
+        }
+
+        .service-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .service-num {
+            font-family: 'Oswald', sans-serif;
+            font-size: 4rem;
+            opacity: 0.5;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .service-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .service-desc {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Hover Effects */
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            z-index: 10;
+        }
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .card-1:hover { box-shadow: 0 0 100px #1F6E7D; }
+        .card-2:hover { box-shadow: 0 0 100px #748E50; }
+        .card-3:hover { box-shadow: 0 0 100px #87466E; }
+
+
+
+
+        /* ========================================= */
+        /* NEW: IMAGE VIEWER STYLES                  */
+        /* ========================================= */
+        .image-viewer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95); /* Very dark overlay */
+            z-index: 3000; /* Must be higher than portfolioModal (2000) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .image-viewer img {
+            /* Fits 80% of screen as requested */
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            transition: transform 0.3s ease; /* Smooth zoom animation */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .close-viewer {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 3rem;
+            color: white;
+            cursor: pointer;
+            z-index: 3001;
+        }
+
+        .viewer-controls {
+            position: absolute;
+            bottom: 30px;
+            display: flex;
+            gap: 20px;
+            z-index: 3001;
+        }
+
+        .zoom-btn {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .zoom-btn:hover {
+            background: white;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        /* --- SECTION 4: CONTACT --- */
+        #contact {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-attachment: fixed;
+            background-image: url(backgrounds/homepage1bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .contact-content {
+            z-index: 2;
+            text-align: center;
+            animation: fadeIn 2.4s ease;
+        }
+
+        .contact-visual {
+            width: 1280px;
+            height: 350px;
+            margin-bottom: 40px;
+            margin-top: 50px;
+            background: rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(5px);
+        }
+        
+        .contact-visual img {
+            width: 100%;
+            height: auto;
+            /* custom logo or some shits editor */
+        }
+
+        .social-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-btn {
+            width: 60px;
+            height: 60px;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-btn:hover {
+            background: #ff0080;
+            color: black;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px white;
+        }
+
+        /* --- MODAL (POPUP) --- */
+        .modal {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 2000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        .modal.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .modal-content {
+            background: #222;
+            width: 90%;
+            max-width: 1000px;
+            height: 80vh;
+            border-radius: 10px;
+            padding: 30px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #fff;
+        }
+        .close-modal:hover { color: #ff0099; }
+
+        .modal-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .gallery-item {
+            background: #333;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover img { transform: scale(1.05); }
+
+        /* --- ANIMATIONS --- */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.5) ; }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateX(-50%) translateY(0);}
+            40% {transform: translateX(-50%) translateY(-20px);}
+            60% {transform: translateX(-50%) translateY(-10px);}
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 968px) {
+            .header-title { font-size: 2.5rem; }
+            .hero-name { font-size: 4rem; }
+            .about-container { flex-direction: column; height: auto; }
+            .about-left { border-right: none; border-bottom: 2px solid white; height: 300px; }
+            .services-grid { grid-template-columns: 1fr; }
+            .svc-main-text { font-size: 4rem; }
+            .svc-sub-text { font-size: 3rem; }
+        }
