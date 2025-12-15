@@ -60,7 +60,7 @@
         'Logo Designing': [
             'Portfolio/logo 2.0.jpg',
             'Portfolio/logo 1.5.jpg',
-            'portfolio/logo.jpg',
+            'portfolio/logo 0.0.jpg',
             'https://media.discordapp.net/attachments/811903789426016296/1449444427658428686/coffee_restaurant_logo_eclipless.jpg?ex=69418ed0&is=69403d50&hm=1c5e88a367335d0bffc1cdee8aeeed80d7ecf09304ca61ecfc8b45f65c478174&=&format=webp&width=1376&height=955',
             'https://media.discordapp.net/attachments/811903789426016296/1449444523619913869/coffee_restaurant_logo.jpg?ex=69418ee7&is=69403d67&hm=76fed862f2d816a4c3c879ac114da762dbae07043f28bd851b3a9e9ba99c00f3&=&format=webp&width=1376&height=955',
             'https://media.discordapp.net/attachments/811903789426016296/1449444882744873091/tech_company_logo_white_version.jpg?ex=69418f3d&is=69403dbd&hm=ca22510ba2b812179fe18c81974c2fa4255a8a8d0fe3d51b126ae970f98e2948&=&format=webp&width=1376&height=955',
@@ -69,8 +69,8 @@
 
         ],
         'Thumbnail Editing': [
-            'Portfolio/lobotomy.jpg',
-            'Portfolio/messi thumbnail.jpg',
+            'Portfolio/footballTB1.jpg',
+            'Portfolio/footballTB2.jpg',
             'Portfolio/roblox veve thumbnail.jpg',
             'Portfolio/neon.jpg',
             'Portfolio/shittyboss.jpg',
@@ -151,4 +151,5 @@
         }
 
     }
+
 
