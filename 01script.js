@@ -64,8 +64,8 @@
 
         ],
         'Thumbnail Editing': [
-            'portfolio/lobotomy.jpg',
-            'portfolio/messi thumbnail.jpg',
+            'Portfolio/lobotomy.jpg',
+            'Portfolio/messi thumbnail.jpg',
             'Portfolio/roblox veve thumbnail.jpg',
             'Portfolio/neon.jpg',
             'Portfolio/shittyboss.jpg',
@@ -144,4 +144,5 @@
         if (event.target == imageViewer) {
             closeImageViewer();
         }
+
     }
