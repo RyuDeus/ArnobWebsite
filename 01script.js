@@ -69,8 +69,8 @@
 
         ],
         'Thumbnail Editing': [
-            'Portfolio/footballTB1.jpg',
             'Portfolio/footballTB2.jpg',
+            'Portfolio/footballTB1.jpg',
             'Portfolio/roblox veve thumbnail.jpg',
             'Portfolio/neon.jpg',
             'Portfolio/shittyboss.jpg',
@@ -151,6 +151,7 @@
         }
 
     }
+
 
 
 
