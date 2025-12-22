@@ -61,11 +61,11 @@
             'Portfolio/logo 2.0.jpg',
             'Portfolio/logo 1.5.jpg',
             'Portfolio/firstlogo.jpg',
-            'https://media.discordapp.net/attachments/811903789426016296/1449444427658428686/coffee_restaurant_logo_eclipless.jpg?ex=69418ed0&is=69403d50&hm=1c5e88a367335d0bffc1cdee8aeeed80d7ecf09304ca61ecfc8b45f65c478174&=&format=webp&width=1376&height=955',
-            'https://media.discordapp.net/attachments/811903789426016296/1449444523619913869/coffee_restaurant_logo.jpg?ex=69418ee7&is=69403d67&hm=76fed862f2d816a4c3c879ac114da762dbae07043f28bd851b3a9e9ba99c00f3&=&format=webp&width=1376&height=955',
-            'https://media.discordapp.net/attachments/811903789426016296/1449444882744873091/tech_company_logo_white_version.jpg?ex=69418f3d&is=69403dbd&hm=ca22510ba2b812179fe18c81974c2fa4255a8a8d0fe3d51b126ae970f98e2948&=&format=webp&width=1376&height=955',
-            'https://media.discordapp.net/attachments/811903789426016296/1449444936264056954/tech_company_logo.jpg?ex=69418f4a&is=69403dca&hm=e219af8750a4491c19ddf5c2675ac69e7f41faf556c2724c98cf756824542c1e&=&format=webp&width=1376&height=955',
-            'https://media.discordapp.net/attachments/811903789426016296/1449444474227785982/realestatelogo.jpg?ex=69418edc&is=69403d5c&hm=d6691982da7b8a20de3c7a90643315b588ecef06e3e86357453f67239d91ad3a&=&format=webp&width=1604&height=902',
+            'Portfolio/coffee restaurant logo eclipless.jpg',
+            'Portfolio/coffee restaurant logo.jpg',
+            'Portfolio/tech company logo white version.jpg',
+            'Portfolio/tech company logo.jpg',
+            'Portfolio/realestatelogo.jpg',
 
         ],
         'Thumbnail Editing': [
@@ -151,6 +151,7 @@
         }
 
     }
+
 
 
 
